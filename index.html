@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Mì Ngầu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SHOP MÌ NGẦU</h1>
+      <button id="toggleCart">🛒 Xem giỏ hàng</button>
+    </header>
+
+    <main class="container">
+      <div class="product">
+        <div class="info">
+          <h2>Bột</h2>
+          <p>11.000đ / kg</p>
+        </div>
+        <button onclick="addToCart('Bột', 11000)">Mua</button>
+      </div>
+
+      <div class="product">
+        <div class="info">
+          <h2>Mì lá</h2>
+          <p>12.000đ / kg</p>
+        </div>
+        <button onclick="addToCart('Mì lá', 12000)">Mua</button>
+      </div>
+
+      <div class="product">
+        <div class="info">
+          <h2>Phở</h2>
+          <p>22.000đ / kg</p>
+        </div>
+        <button onclick="addToCart('Phở', 22000)">Mua</button>
+      </div>
+    </main>
+
+    <div class="cart hidden" id="cart">
+      <h3>Giỏ Hàng</h3>
+      <ul id="cart-items"></ul>
+      <p id="total">Tổng: 0đ</p>
+    </div>
+
+    <footer>&copy; 2025 Shop Mì Ngầu. Code by Yeager 🔥</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
